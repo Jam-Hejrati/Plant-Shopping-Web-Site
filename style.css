@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #223;
+  background: hsla(18, 76%, 85%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(18, 76%, 85%, 1) 0%,
+    hsla(203, 69%, 84%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(18, 76%, 85%, 1) 0%,
+    hsla(203, 69%, 84%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(18, 76%, 85%, 1) 0%,
+    hsla(203, 69%, 84%, 1) 100%
+  );
+
+  /* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6CFBE", endColorstr="#B9DCF2", GradientType=1 ); */
+}
+
+header {
+  width: 100%;
+  background-color: #1098ad;
+  display: flex;
+  align-items: center;
+  /* justify-content: ; */
+  padding: 10px 5px;
+  position: sticky;
+  top: 0;
+}
+
+header > h1 {
+  font-size: 43px;
+  font-weight: 900;
+  color: #333;
+  padding: 0 20px;
+  display: inline-block;
+}
+
+header > nav {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+}
+
+header > nav > a {
+  margin: 0 28px;
+  color: #333;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  transition: color 0.35s;
+}
+
+header > nav > a:hover {
+  color: #f1f1f1;
+}
+
+section {
+  display: flex;
+  /* height: 100vh; */
+  width: 100%;
+  align-items: center;
+}
+
+section > img {
+  width: 50%;
+}
+
+.content {
+  height: 100%;
+  margin: 60px;
+  font-size: 18px;
+  line-height: 1.7rem;
+  font-family: sans-serif;
+}
+
+.content > h1 {
+  letter-spacing: -2px;
+  margin-bottom: 35px;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+@media (max-width: 800px) {
+  header {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    position: inherit;
+    width: 100%;
+  }
+  header > h1 {
+    padding: 0;
+    margin: 0;
+  }
+  header > nav {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  header > nav > a {
+    padding: 8px 0;
+  }
+  h1 {
+    margin-bottom: 30px;
+  }
+  section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section > img {
+    width: 100%;
+  }
+  .sec--2 {
+    flex-direction: column-reverse;
+  }
+}
