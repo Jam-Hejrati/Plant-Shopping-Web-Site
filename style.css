@@ -1,3 +1,10 @@
+:root {
+  --backg-color: hsla(18, 76%, 85%, 1);
+  --text-color: #212529;
+  --header-back-color: #1098ad;
+  --nav-hover-color: #f1f1f1;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,8 +12,9 @@
 }
 
 body {
-  color: #223;
-  background: hsla(18, 76%, 85%, 1);
+  scroll-behavior: smooth;
+  color: var(--text-color);
+  background: var(--backg-color);
 
   background: linear-gradient(
     90deg,
@@ -26,24 +34,24 @@ body {
     hsla(203, 69%, 84%, 1) 100%
   );
 
-  /* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6CFBE", endColorstr="#B9DCF2", GradientType=1 ); */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6CFBE", endColorstr="#B9DCF2", GradientType=1 );
 }
 
 header {
   width: 100%;
-  background-color: #1098ad;
+  background-color: var(--header-back-color);
   display: flex;
   align-items: center;
-  /* justify-content: ; */
   padding: 10px 5px;
   position: sticky;
   top: 0;
 }
 
-header > h1 {
-  font-size: 43px;
+header > a {
+  text-decoration: none;
+  font-size: 22px;
+  color: var(--text-color);
   font-weight: 900;
-  color: #333;
   padding: 0 20px;
   display: inline-block;
 }
@@ -57,7 +65,7 @@ header > nav {
 
 header > nav > a {
   margin: 0 28px;
-  color: #333;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 24px;
   font-weight: 600;
@@ -65,14 +73,15 @@ header > nav > a {
 }
 
 header > nav > a:hover {
-  color: #f1f1f1;
+  color: var(--nav-hover-color);
 }
 
 section {
+  padding: 20px 0;
   display: flex;
-  /* height: 100vh; */
   width: 100%;
   align-items: center;
+  justify-content: space-between;
 }
 
 section > img {
@@ -80,19 +89,35 @@ section > img {
 }
 
 .content {
-  height: 100%;
-  margin: 60px;
+  /* height: 100%; */
+  padding: 0 39px;
+  margin: 30px 0;
   font-size: 18px;
-  line-height: 1.7rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.03rem;
   font-family: sans-serif;
 }
 
 .content > h1 {
   letter-spacing: -2px;
-  margin-bottom: 35px;
-  font-size: 32px;
+  margin-bottom: 15px;
+  font-size: 1.9rem;
   font-weight: 700;
   font-family: sans-serif;
+}
+
+.content > p {
+  width: 89%;
+}
+
+.sec--2 > .content {
+  margin-left: 20px;
+}
+
+@media (max-width: 900px) {
+  .content > p {
+    width: 100%;
+  }
 }
 
 @media (max-width: 800px) {
@@ -126,7 +151,13 @@ section > img {
   section > img {
     width: 100%;
   }
+  section > .content {
+    margin: 10px 30px;
+  }
   .sec--2 {
     flex-direction: column-reverse;
+  }
+  .sec--2 > .content {
+    margin: 30px;
   }
 }
