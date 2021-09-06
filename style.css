@@ -98,10 +98,6 @@ header > nav > a::after {
   transition: width 0.3s;
 }
 
-/* header > nav > a:hover {
-  color: var(--nav-hover-color);
-} */
-
 header > nav > a:hover::after {
   width: 100%;
 }
@@ -199,7 +195,7 @@ footer > nav > a {
 }
 
 .fa {
-  transition: color 0.3s;
+  transition: color 0.2s;
 }
 
 #telegram:hover {
@@ -221,6 +217,9 @@ footer > nav > a {
 @media (max-width: 900px) {
   .content > p {
     width: 100%;
+  }
+  .content > a > button {
+    font-size: 0.689rem;
   }
 }
 
@@ -270,11 +269,11 @@ footer > nav > a {
     margin: 5px;
   }
   .content > a > button {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     width: 25vw;
   }
   footer > nav > a {
-    font-size: 15px;
-    margin: 0 5px;
+    font-size: 1.9rem;
+    margin: 0 2px;
   }
 }
