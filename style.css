@@ -22,11 +22,11 @@
   --footer-background: #dee2e6;
   --copy-footer-text-color: #495057;
   --socialmedia-color: #343a40;
-  --telegram-color: #32afed;
+  --telegram-color: #1fa0e0;
   --instagram-color: #ef4a65;
   --youtube-color: #f04024;
   --github-color: #000000;
-  --linkedin-color: #0a66c1;
+  --linkedin-color: #0070ac;
 }
 
 * {
@@ -175,7 +175,6 @@ footer {
 footer > p:not(:first-child) {
   padding: 8px;
   color: var(--copy-footer-text-color);
-  align-self: flex-start;
 }
 
 .footer-text {
