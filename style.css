@@ -176,7 +176,7 @@ section > img {
   display: inline-block;
   text-transform: capitalize;
   margin: 45px 60px;
-  padding: 5px 5px;
+  padding: 5px 15px;
   font-weight: 900;
   letter-spacing: -2px;
   border-bottom: 1px solid #111;
@@ -365,6 +365,31 @@ footer > nav > a {
   .content > a > button {
     font-size: 0.9rem;
     width: 25vw;
+  }
+  .shop {
+    flex-direction: column;
+  }
+  #shop {
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+    margin: 20px 0;
+  }
+  .item {
+    margin: 40px 0;
+    width: 90vw;
+  }
+  .price {
+    flex-direction: column;
+  }
+  .price > p {
+    font-size: 25px;
+  }
+  .price > button {
+    font-size: 1rem;
+    width: 100%;
+    height: 8vh;
+    margin-top: 10px;
   }
   footer > nav > a {
     font-size: 1.9rem;
