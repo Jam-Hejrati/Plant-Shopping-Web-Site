@@ -27,7 +27,9 @@
   --youtube-color: #f04024;
   --github-color: #000000;
   --linkedin-color: #0070ac;
-  --shop-background-color: #ffe3e3;
+  --shop-background-color: #fff0f6;
+  --shop-card-header-color: #212529;
+  --shop-card-text-color: #495057;
 }
 
 * {
@@ -185,10 +187,20 @@ section > img {
   border-radius: 10px 10px 0 0;
 }
 
+.item > h3 {
+  padding: 25px 25px 0;
+  font-family: sans-serif;
+  letter-spacing: -1px;
+  font-size: 18px;
+  color: var(--shop-card-header-color);
+  text-transform: capitalize;
+}
+
 .item > p {
-  padding: 20px 25px;
+  padding: 10px 25px 20px;
   line-height: 1.5rem;
   font-size: 16px;
+  color: var(--shop-card-text-color);
   font-weight: 500;
   font-family: sans-serif;
 }
