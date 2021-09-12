@@ -19,6 +19,7 @@
     hsla(203, 69%, 84%, 1) 100%
   );
   --button-color: #087f5b;
+  --button-hover-color: #099268;
   --footer-background: #dee2e6;
   --copy-footer-text-color: #495057;
   --socialmedia-color: #343a40;
@@ -30,6 +31,9 @@
   --shop-background-color: #fff0f6;
   --shop-card-header-color: #212529;
   --shop-card-text-color: #495057;
+  --shop-card-icon-color: #087f5b;
+  --shop-card-icon-text-color: #343a40;
+  --button-text: #f1f3f5;
 }
 
 * {
@@ -136,6 +140,7 @@ section > img {
 }
 
 .content > p {
+  color: var(--text-color);
   width: 89%;
 }
 
@@ -150,12 +155,13 @@ section > img {
   text-transform: uppercase;
   letter-spacing: 0.03rem;
   font-weight: 500;
+  color: var(--button-text);
   cursor: pointer;
   transition: background 0.2s;
 }
 
 .content > a > button:hover {
-  background: #099268;
+  background: var(--button-hover-color);
 }
 
 .shop {
@@ -169,7 +175,7 @@ section > img {
   font-family: sans-serif;
   display: inline-block;
   text-transform: capitalize;
-  margin: 35px 50px;
+  margin: 45px 60px;
   padding: 5px 5px;
   font-weight: 900;
   letter-spacing: -2px;
@@ -197,12 +203,61 @@ section > img {
 }
 
 .item > p {
-  padding: 10px 25px 20px;
+  padding: 15px 25px 20px;
   line-height: 1.5rem;
   font-size: 16px;
   color: var(--shop-card-text-color);
   font-weight: 500;
   font-family: sans-serif;
+}
+
+.shoping-card-icons {
+  padding: 8px 25px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 7px;
+  row-gap: 20px;
+}
+
+.icon-container {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--shop-card-icon-text-color);
+  font-family: sans-serif;
+}
+
+.icon-container > i {
+  color: var(--shop-card-icon-color);
+  padding-right: 7px;
+  font-size: 18px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px 23px;
+}
+
+.price > p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.price > button {
+  border: none;
+  background: var(--button-color);
+  width: 8vw;
+  height: 6vh;
+  border-radius: 1000px;
+  color: var(--button-text);
+  transition: background 0.2s;
+}
+
+.price > button:hover {
+  cursor: pointer;
+  background: var(--button-hover-color);
 }
 
 footer {
