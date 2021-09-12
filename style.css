@@ -27,6 +27,7 @@
   --youtube-color: #f04024;
   --github-color: #000000;
   --linkedin-color: #0070ac;
+  --shop-background-color: #ffe3e3;
 }
 
 * {
@@ -136,10 +137,6 @@ section > img {
   width: 89%;
 }
 
-.sec--2 > .content {
-  margin-left: 20px;
-}
-
 .content > a > button {
   width: 11vw;
   height: 6vh;
@@ -157,6 +154,43 @@ section > img {
 
 .content > a > button:hover {
   background: #099268;
+}
+
+.shop {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.shopping-header {
+  font-family: sans-serif;
+  display: inline-block;
+  text-transform: capitalize;
+  margin: 35px 50px;
+  padding: 5px 5px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  border-bottom: 1px solid #111;
+}
+
+.item {
+  background: var(--shop-background-color);
+  width: 26vw;
+  border-radius: 10px;
+}
+
+.item > img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.item > p {
+  padding: 20px 25px;
+  line-height: 1.5rem;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: sans-serif;
 }
 
 footer {
@@ -260,12 +294,6 @@ footer > nav > a {
   section > .content {
     margin: 10px 5px;
     letter-spacing: 0;
-  }
-  .sec--2 {
-    flex-direction: column-reverse;
-  }
-  .sec--2 > .content {
-    margin: 5px;
   }
   .content > a > button {
     font-size: 0.9rem;
