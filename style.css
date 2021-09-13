@@ -351,6 +351,9 @@ footer > nav > a {
     justify-content: center;
     align-items: center;
   }
+  .sec--1 {
+    flex-direction: column-reverse;
+  }
   section > img {
     width: 100%;
   }
