@@ -2,7 +2,9 @@
   --backg-color: #f1f3f5;
   --text-color: #212529;
   --header-back-color: rgba(255, 255, 255, 0.2);
-  --nav-hover-color: #212529;
+  --hero-header-color: #e9ecef;
+  --hero-login-color: #dee2e6;
+  --nav-hover-color: #e9ecef;
   --button-color: #087f5b;
   --button-hover-color: #099268;
   --footer-background: #dee2e6;
@@ -38,37 +40,37 @@ body {
 }
 
 header {
-  width: 100%;
-  background-color: var(--header-back-color);
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(Img/ricardo-l-4pRm9XHPU_8-unsplash.jpg);
+  background-size: cover;
   display: flex;
-  align-items: center;
-  padding: 15px 15px;
-  border-radius: 0 0 14px 14px;
+  flex-direction: column;
+  padding: 22px 30px;
+  position: relative;
 }
 
-header > .logo {
+.logo a {
   text-decoration: none;
-  font-size: 1rem;
-  color: var(--text-color);
-  padding: 0 20px;
-  display: inline-block;
-}
-
-header > .logo > h1 {
+  font-size: 2rem;
   font-weight: 700;
+  margin-right: 52px;
+  color: var(--hero-header-color);
 }
 
 header > nav {
+  margin: 0 10px;
   display: flex;
   flex-direction: row;
-  margin-left: 60px;
+  align-items: center;
+  gap: 60px;
+  position: relative;
 }
 
 header > nav > a {
-  margin: 0 28px;
-  color: var(--text-color);
+  color: var(--hero-header-color);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.3rem;
   font-weight: 400;
   transition: all 0.35s;
 }
@@ -84,6 +86,32 @@ header > nav > a::after {
 
 header > nav > a:hover::after {
   width: 100%;
+}
+
+.login {
+  color: var(--hero-login-color);
+  font-size: 1.3rem;
+  letter-spacing: 0.03rem;
+  font-weight: 300;
+  margin: 0 20px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.hero-header {
+  width: 34vw;
+  text-shadow: 1px 1px 30px #444;
+  color: var(--hero-header-color);
+  text-transform: capitalize;
+  letter-spacing: -1.5px;
+  line-height: 3.52rem;
+  margin: 0 90px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 3.5rem;
+  font-weight: 700;
 }
 
 section {
