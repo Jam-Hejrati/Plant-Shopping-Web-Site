@@ -1,23 +1,8 @@
 :root {
-  --backg-color: hsla(18, 76%, 85%, 1);
+  --backg-color: #f1f3f5;
   --text-color: #212529;
-  --header-back-color: #e9ecef;
+  --header-back-color: rgba(255, 255, 255, 0.2);
   --nav-hover-color: #212529;
-  --background-gradient: linear-gradient(
-    90deg,
-    hsla(18, 76%, 85%, 1) 0%,
-    hsla(203, 69%, 84%, 1) 100%
-  );
-  --moz-background-gradient: -moz-linear-gradient(
-    90deg,
-    hsla(18, 76%, 85%, 1) 0%,
-    hsla(203, 69%, 84%, 1) 100%
-  );
-  --webkit-background-gradient: -webkit-linear-gradient(
-    90deg,
-    hsla(18, 76%, 85%, 1) 0%,
-    hsla(203, 69%, 84%, 1) 100%
-  );
   --button-color: #087f5b;
   --button-hover-color: #099268;
   --footer-background: #dee2e6;
@@ -28,7 +13,7 @@
   --youtube-color: #f04024;
   --github-color: #000000;
   --linkedin-color: #0070ac;
-  --shop-background-color: #fff0f6;
+  --shop-background-color: #e9ecef;
   --shop-card-header-color: #212529;
   --shop-card-text-color: #495057;
   --shop-card-icon-color: #087f5b;
@@ -47,16 +32,9 @@ html {
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   color: var(--text-color);
   background: var(--backg-color);
-
-  background: var(--background-gradient);
-
-  background: var(--moz-background-gradient);
-
-  background: var(--webkit-background-gradient);
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6CFBE", endColorstr="#B9DCF2", GradientType=1 );
 }
 
 header {
@@ -64,27 +42,26 @@ header {
   background-color: var(--header-back-color);
   display: flex;
   align-items: center;
-  padding: 10px 5px;
-  position: sticky;
-  top: 0;
-  border-bottom-left-radius: 14px;
-  border-bottom-right-radius: 14px;
+  padding: 15px 15px;
+  border-radius: 0 0 14px 14px;
 }
 
 header > .logo {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--text-color);
-  font-weight: 900;
   padding: 0 20px;
   display: inline-block;
 }
 
+header > .logo > h1 {
+  font-weight: 700;
+}
+
 header > nav {
-  font-family: sans-serif;
   display: flex;
   flex-direction: row;
-  margin-left: 50px;
+  margin-left: 60px;
 }
 
 header > nav > a {
@@ -92,7 +69,7 @@ header > nav > a {
   color: var(--text-color);
   text-decoration: none;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   transition: all 0.35s;
 }
 
@@ -100,9 +77,9 @@ header > nav > a::after {
   content: "";
   display: block;
   width: 0;
-  height: 1.5px;
+  height: 2px;
   background: var(--nav-hover-color);
-  transition: width 0.3s;
+  transition: 0.3s;
 }
 
 header > nav > a:hover::after {
@@ -124,18 +101,17 @@ section > img {
 .content {
   padding: 0 39px;
   margin: 30px 0;
-  font-size: 18px;
+  font-size: 1.2rem;
   line-height: 1.9rem;
   letter-spacing: 0.03rem;
   font-family: sans-serif;
 }
 
 .content > h1 {
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   margin-bottom: 20px;
   font-size: 1.9rem;
   font-weight: 700;
-  font-family: sans-serif;
   text-transform: capitalize;
 }
 
@@ -172,13 +148,12 @@ section > img {
 }
 
 .shopping-header {
-  font-family: sans-serif;
   display: inline-block;
   text-transform: capitalize;
   margin: 45px 60px;
   padding: 5px 15px;
-  font-weight: 900;
-  letter-spacing: -2px;
+  font-weight: 700;
+  letter-spacing: -1px;
   border-bottom: 1px solid #111;
 }
 
@@ -195,9 +170,9 @@ section > img {
 
 .item > h3 {
   padding: 25px 25px 0;
-  font-family: sans-serif;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
   font-size: 18px;
+  font-weight: 500;
   color: var(--shop-card-header-color);
   text-transform: capitalize;
 }
