@@ -334,18 +334,24 @@ footer > nav > a {
     position: inherit;
     width: 100%;
   }
+  header nav p,
   header > h1 {
-    padding: 0;
+    display: none;
+  }
+  .logo a {
     margin: 0;
+  }
+  .logo {
+    margin-bottom: 84px;
   }
   header > nav {
     flex-direction: column;
     align-items: center;
     margin: 0;
   }
-  header > nav > a {
+  /* header > nav > a {
     padding: 15px 0;
-  }
+  } */
   h1 {
     margin-bottom: 30px;
   }
