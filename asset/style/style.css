@@ -42,7 +42,7 @@ body {
 header {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(Img/ricardo-l-4pRm9XHPU_8-unsplash.jpg);
+    url(../Img/ricardo-l-4pRm9XHPU_8-unsplash.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -318,6 +318,9 @@ footer > nav > a {
 }
 
 @media (max-width: 900px) {
+  header nav p {
+    display: none;
+  }
   .content > p {
     width: 100%;
   }
@@ -334,7 +337,6 @@ footer > nav > a {
     position: inherit;
     width: 100%;
   }
-  header nav p,
   header > h1 {
     display: none;
   }
@@ -349,9 +351,6 @@ footer > nav > a {
     align-items: center;
     margin: 0;
   }
-  /* header > nav > a {
-    padding: 15px 0;
-  } */
   h1 {
     margin-bottom: 30px;
   }
