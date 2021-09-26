@@ -15,3 +15,9 @@ img {
   height: 70%;
   overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  img {
+    height: 50%;
+  }
+}
